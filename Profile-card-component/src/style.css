@@ -1,0 +1,48 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #56CFE1;
+}
+
+.card{
+  width: 400px;
+  height: 450px;
+  background: #fefefe;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.header{
+	background-image: url('https://raw.githubusercontent.com/murerkinn/frontend-mentor-profile-card-component/b4ff95cbe1bdc467f178cd97590c54215c8ee691/images/bg-pattern-card.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 150px;
+}
+
+.image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -2rem;
+}
+
+.info{
+  text-align: center;
+}
+
+.footer{
+  flex: 0.2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  border-top: 2px solid #d8d9df;
+  color: hsl(229, 23%, 23%);
+  margin-top: 3rem;
+}
+
+.infoFooter{
+  text-align: center;
+}
