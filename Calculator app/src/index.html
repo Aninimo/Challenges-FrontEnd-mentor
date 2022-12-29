@@ -1,0 +1,183 @@
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <!-- ========== STYLE ========== -->
+    <link rel="stylesheet"href="style.css">
+  </head>
+  <body>
+   <header class="header">
+        <h1 class="header__logo">calc</h1>
+        <div class="header__theme">
+          <div class="header__theme__numbers">
+            <span class="header__theme__number">1</span>
+            <span class="header__theme__number">2</span>
+            <span class="header__theme__number">3</span>
+          </div>
+          <div class="header__theme__wrapper">
+            <p class="header__theme__title">THEME</p>
+            <div class="header__theme__container">
+              <label for="theme0" class="header__theme__label"></label>
+              <input
+                type="radio"
+                class="header__theme__theme"
+                id="theme0"
+                name="theme"
+              />
+              <label for="theme1" class="header__theme__label"></label>
+              <input
+                type="radio"
+                class="header__theme__theme"
+                id="theme1"
+                name="theme"
+              />
+              <label for="theme2" class="header__theme__label"></label>
+              <input
+                type="radio"
+                class="header__theme__theme"
+                id="theme2"
+                name="theme"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+    <div class='container'>
+      <form name="form">
+      <input 
+        type='text'
+        class='input'
+        id='screen'
+        name='input'
+        disabled='true'/>
+        
+      <div class='keyboard'>
+        <div class='line'>
+          <input 
+            type='button'
+            value='7'
+            class='button'
+            onclick='insert("7")'/>
+          <input
+           type='button'
+           value='8'
+           class='button'
+           onclick='insert("8")'
+          />
+          <input
+           type='button'
+           value='9'
+           class='button'
+           onclick='insert("9")'
+          />
+          <input
+            type='button'
+            value='Del'
+            class='button'
+            id='del'
+            onclick='delet()'
+          />
+        </div>
+        
+        <div class='line'>
+          <input
+           type='button'
+           value='7'
+           class='button'
+           onclick='insert("7")'
+          />
+          <input
+            type='button'
+            value='5'
+            class='button'
+            onclick='insert("5")'
+          />
+          <input
+            type='button'
+            value='4'
+            class='button'
+            onclick='insert("4")'
+          />
+          <input
+            type='button'
+            value='+'
+            class='button'
+            onclick='insert("+")'
+          />
+        </div>
+        
+        <div class='line'>
+          <input
+            type='button'
+            value='1'
+            class='button'
+            onclick='insert("1")'
+          />
+          <input 
+           type='button'
+           value='2'
+           class='button'
+           onclick='insert("2")'/>
+          <input
+            type='button'
+            value='3'
+            class='button'
+            onclick='insert("3")'
+          />
+          <input
+            type='button'
+            value='-'
+            class='button'
+            onclick='insert("-")'
+          />
+        </div>
+        
+        <div class='line'>
+          <input
+            type='button'
+            value='●'
+            class='button'
+            
+            onclick='insert(".")'     
+          />
+          <input
+            type='button'
+            value='0'
+            class='button'
+            onclick='insert("0")'
+          />
+          <input
+            type='button'
+            value='/'
+            class='button'
+            onclick='insert("/")'
+          />
+          <input
+            type='button'
+            value='x'
+            class='button'
+            onclick='insert("*")'
+          />
+        </div>
+        
+        <div class='line'>
+          <input 
+            type='reset'
+            value='Reset'
+            class='button'
+            id='reset'
+          />
+          
+          <input 
+            type='button'
+            value='='
+            class='button'
+            id='equal'
+            onclick='result()'
+          />
+        </div>
+      </div>
+      </form>
+    </div>
+    <script src='main.js'></script>
+  </body>
+</html>
