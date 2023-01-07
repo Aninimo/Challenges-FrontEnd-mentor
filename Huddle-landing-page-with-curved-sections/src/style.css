@@ -1,0 +1,248 @@
+:root{
+  --pink: hsla(322, 100%, 66%, 1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+  margin-top: 4rem;
+  gap: 1.5rem;
+}
+
+a{
+  text-decoration: none;
+  color: #FFF;
+  font-size: 2rem;
+}
+
+img{
+  width: 500px;
+}
+
+section{
+  margin-bottom: 5rem;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo{
+  width: 250px;
+  /*height: 100px;*/
+}
+
+.button{
+  padding: 1rem 3rem;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  border-radius: 50px;
+  background: none;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.button:hover{
+  background: var(--pink);
+  color: #FFF;
+}
+
+.main{
+  padding: 1.5rem;
+}
+
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 5rem;
+}
+
+.sectionContent{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+  gap: 18rem;
+}
+
+.iconInfo{
+  width: 70px;
+}
+
+.num{
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.sub{
+  font-size: 1.5rem;
+  color: #6C757D;
+}
+
+.subtitle{
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.titleSection{
+  margin-bottom: 1.5rem;
+}
+
+.buttonGetStarted{
+  background: var(--pink);
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  color: #FFF;
+  cursor: pointer;
+  margin-bottom: 5rem;
+}
+
+.community{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+}
+
+.community > h1{
+  margin-bottom: 2rem;
+}
+
+.imgFooter{
+  width: 100vw;
+  position: absolute;
+  margin-top: -6.5rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  background: hsla(192, 100%, 9%, 1);
+  color: #FFF;
+  padding: 1rem;
+}
+
+.logoFooter{
+  width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.icons{
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.iconContact{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.icon{
+  width: 30px;
+}
+
+.footerTitle{
+  margin-bottom: 1.5rem;
+}
+
+.input{
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.input > input{
+  width: 16rem;
+  height: 2rem;
+  padding: 1rem
+  border-radius: 8px;
+}
+
+.input > button{
+  padding: .5rem 3rem;
+  background: var(--pink);
+  border: none;
+  color: #FFF;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .logo{
+    width: 80px;
+  }
+  
+  .button{
+    padding: 1rem 2rem;
+  }
+  
+  .section{
+    display: block;
+  }
+  
+  .info{
+    gap: 1rem
+  }
+  
+  .iconInfo{
+    width: 70px;
+  }
+  
+  .num{
+    font-size: 1.5rem;
+  }
+  
+  .sub{
+    font-size: 1.2rem;
+  }
+  
+  .sectionContent{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagePrimary{
+    width: 220px;
+  }
+  
+  .footer{
+    display: block;
+  }
+  
+  .logoFooter{
+    width: 120px;
+  }
+  
+  .imgFooter{
+    margin-top: -2.3rem;
+  }
+  
+  .input > input{
+    width: 13rem;
+  }
+  
+  .input > button{
+    padding: .5rem 2rem;
+  }
+}
